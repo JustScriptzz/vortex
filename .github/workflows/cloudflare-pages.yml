@@ -1,0 +1,13 @@
+# DISABLED - Using deploy-workers.yml instead for Cloudflare Workers deployment
+name: (DISABLED) Deploy to Cloudflare Pages
+
+on:
+  workflow_dispatch:
+    # Manual trigger only - auto-deploy uses deploy-workers.yml
+
+jobs:
+  disabled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skipped
+        run: echo "This workflow is disabled. Use deploy-workers.yml instead."
